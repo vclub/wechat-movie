@@ -1,0 +1,31 @@
+/* pages/movieList/movieList.wxss */
+
+.movie-card {
+  display: flex;
+  width: 660rpx;
+  margin: 20rpx;
+  border: 1px solid #e6e7e8;
+  background: #fff;
+}
+
+.movie-image {
+  width: 216rpx;
+  height: 320rpx
+}
+
+.movie-text {
+  display: flex;
+  padding: 0 20rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-title {
+  margin-bottom: 30rpx;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.movie-category {
+  font-size: 0.6em;
+}

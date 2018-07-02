@@ -1,0 +1,35 @@
+/* pages/movieDetail/movieDetail.wxss */
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  width: 660rpx;
+  margin: 100rpx 20rpx 20rpx 20rpx;
+  border: 1px solid #e6e7e8;
+  background: #fff;
+  align-items: center;
+}
+
+.movie-image {
+  margin-top: 30rpx;
+  position: absolute;
+  width: 270rpx;
+  height: 400rpx;
+}
+
+.detail-box .title {
+  margin-top: 360rpx;
+  font-size: 1.0em;
+  font-style: bold;
+}
+
+.detail-box .desc {
+  font-size: 0.8em;
+  margin: 60rpx;
+  line-height: 1.6em;
+  color: #43515b;
+}
+
+.comment-box {
+  display: flex;
+}

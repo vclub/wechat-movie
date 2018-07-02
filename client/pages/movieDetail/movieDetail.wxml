@@ -1,0 +1,25 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class='container'>
+  <block wx:if="{{movie}}">
+
+    <image class='movie-image' src='{{movie.image}}' />
+    <view class='detail-box'>
+
+
+      <view class='title'>{{movie.title}}</view>
+
+      <view class='desc'>{{movie.description}}</view>
+
+      <view class='comment-box'>
+        <navigator url='/pages/commentList/commentList'>查看评论</navigator>
+
+        <navigator url='/pages/commentEdit/commentEdit'>添加评论</navigator>
+
+      </view>
+    </view>
+
+
+  </block>
+
+
+</view>

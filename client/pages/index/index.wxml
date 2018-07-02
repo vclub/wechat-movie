@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+  <block wx:if="{{movie}}">
+    <navigator url="/pages/movieDetail/movieDetail?id={{movie.id}}">
+      <image src="{{movie.image}}" mode="aspectFit" />
+    </navigator>
+    <view class="title">{{movie.title}}</view>
+  </block>
+
+</view>
+<view class='opr-cnt'>
+  <navigator class='opr-trolley' url='/pages/movieList/movieList'>热门</navigator>
+  <navigator class='opr-buy' url='/pages/user/user'>我的</navigator>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/movieList/movieList.wxml-->
+<view class='container'>
+
+  <view class='movie-row' wx:for='{{movies}}' wx:key="id" wx:for-item='movie'>
+    <navigator class='movie-card' url='/pages/movieDetail/movieDetail?id={{movie.id}}'>
+      <image class='movie-image' src='{{movie.image}}' width='270px' height='401px' />
+      <view class='movie-text'>
+        <view class='movie-title'>{{movie.title}}</view>
+        <view class='movie-category'>类型: {{movie.category}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
