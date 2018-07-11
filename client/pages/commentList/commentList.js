@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    comments:[
+      { "id": "1", "movie_id": "1", "open_id": "112321", "content": "fdsafdsafdsafdsafdsa", "type": "1" },
+      { "id": "2", "movie_id": "1", "open_id": "112321", "content": "fdsafdsafdsafdsafdsa", "type": "2" }
+    ]
   },
 
   /**

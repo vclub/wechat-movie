@@ -1,2 +1,9 @@
 <!--pages/commentList/commentList.wxml-->
-<text>pages/commentList/commentList.wxml</text>
+  <navigator wx:for="{{ comments }}" wx:key="{{ item.key }}" url="{{ '/pages/commentDetail/commentDetail?id=' + item.id }}" class="comment-container">
+    <view class="comment-header">
+      <image class="avatar" src="{{ item.user_info.avatarUrl }}" />
+      <text>{{ item.open_id }}的影评</text>
+    </view>
+    <view wx:if="{{ item.type == 1 }}" class="comment-body">{{ item.content }}</view>
+    <view wx:else class="audio">语音</view>
+  </navigator>
